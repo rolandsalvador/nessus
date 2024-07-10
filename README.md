@@ -1,9 +1,11 @@
 <h1>Nessus Home Lab</h1>
 
 <h2>Description</h2>
-aaa
-<br />
+In this lab, I installed Nessus Essentials on my host computer and used a new Windows 11 virtual machine as the scanning target. I followed the 
+<a href="https://community.tenable.com/s/article/Troubleshooting-Credential-scanning-on-Windows?language=en_US">vendor recommended configuration</a>
+steps on the host machine to enable credentialed scans, such as editing registry files, opening ports, and starting services. After successfully running a credentialed scan, I remediated a few of the vulnerabilities that were found.
 
+<br /> In the walkthrough below, I detail many of the steps I took to configure Nessus and the results of my scans. Thank you for taking a look!
 
 <h2>Skills Used</h2>
 
@@ -16,8 +18,9 @@ aaa
 <h2>Environments Used </h2>
 
 - <b>Windows 11</b>
+- <b>VMware Workstation Pro</b>
 
-<h2>Lab Walkthrough</h2>
+<h2>Walkthrough</h2>
 
 <!--
 <p align="center">
