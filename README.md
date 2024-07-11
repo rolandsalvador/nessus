@@ -21,14 +21,15 @@ steps on the host machine to enable credentialed scans, including editing regist
 - <b>VMware Workstation Pro</b>
 
 <h2>Contents</h2>
-1. Nessus Essentials setup<br />
-2. Configuring vulnerability scan target<br />
-3. Non-credentialed scan<br />
-4. Credentialed scan setup<br />
-5. Credentialed scan<br />
-6. Vulnerability remediation<br />
-7. Remediated scan<br />
-8. Finishing off<br />
+
+[1. Nessus Essentials setup](#1-nessus-essentials-setup)<br />
+[2. Configuring vulnerability scan target](#2-configuring-vulnerability-scan-target)<br />
+[3. Non-credentialed scan](#3-non-credentialed-scan)<br />
+[4. Credentialed scan setup](#4-credentialed-scan-setup)<br />
+[5. Credentialed scan](#5-credentialed-scan)<br />
+[6. Vulnerability remediation](#6-vulnerability-remediation)<br />
+[7. Remediated scan](#7-remediated-scan)<br />
+[8. Finishing off](#8-finishing-off)<br />
 
 <h2>Walkthrough</h2>
 
