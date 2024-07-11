@@ -115,23 +115,28 @@ Finally, I provided the virtual machine’s credentials on the Nessus dashboard 
 <img src="https://i.imgur.com/qPSY3h4.png"/>
 
 <h3>5. Credentialed scan</h3>
+After completing the configuration steps above, I ran a test credentialed scan to see if everything was set up correctly.
 <br />
 <br />
 <img src="https://i.imgur.com/l0ln427.png"/>
 
+Thankfully, it worked. We can now see some high and medium severity vulnerabilities in the scan now.
 <br />
 <br />
 <img src="https://i.imgur.com/oFBlBP3.png"/>
 
 <h3>6. Vulnerability remediation</h3>
+The remediations tab is available now. Since this is a freshly installed Windows 11 machine, the only remediation Nessus suggests is a Windows update to the latest version. However, there was a high and medium severity vulnerability that I had to fix manually.
 <br />
 <br />
 <img src="https://i.imgur.com/70CyOPJ.png"/>
 
+The high severity vulnerability described that the target machine is missing the EnableCertPaddingCheck registry keys in two places. One is required for the machine, and a second one is required because the machine is running a 64-bit OS.
 <br />
 <br />
 <img src="https://i.imgur.com/l1Jm6zs.png"/>
 
+To remediate this, I created a text file to add these keys to the registry and enable them. Saving and then executing the file remediated the vulnerability.
 <br />
 <br />
 <img src="https://i.imgur.com/FHVDo9O.png"/>
