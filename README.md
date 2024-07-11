@@ -3,7 +3,7 @@
 <h2>Description</h2>
 In this lab, I installed Nessus Essentials on my host computer and used a new Windows 11 virtual machine as the scanning target. I followed the 
 <a href="https://community.tenable.com/s/article/Troubleshooting-Credential-scanning-on-Windows?language=en_US">vendor recommended configuration</a>
-steps on the host machine to enable credentialed scans, such as editing registry files, opening ports, and starting services. After successfully running a credentialed scan, I remediated a few of the vulnerabilities that were found.
+steps on the host machine to enable credentialed scans, including editing registry files, opening ports, and starting services. After successfully running a credentialed scan, I remediated a few of the vulnerabilities that were found.
 
 <br /> In the walkthrough below, I detail many of the steps I took to configure Nessus and the results of my scans. Thank you for taking a look!
 
@@ -21,44 +21,126 @@ steps on the host machine to enable credentialed scans, such as editing registry
 - <b>VMware Workstation Pro</b>
 
 <h2>Walkthrough</h2>
+<br />
+<br />
+<img src="https://i.imgur.com/SqEy2qS.png"/>
+
+<br />
+<br />
+<img src="https://i.imgur.com/1KofJKy.png"/>
+
+<br />
+<br />
+<img src="https://i.imgur.com/bXc5kiR.png"/>
+
+<br />
+<br />
+<img src="https://i.imgur.com/kClJSy3.png"/>
+
+<br />
+<br />
+<img src="https://i.imgur.com/8al2XQ9.png"/>
+
+<br />
+<br />
+<img src="https://i.imgur.com/APSsPoP.png"/>
+
+<br />
+<br />
+<img src="https://i.imgur.com/Rvw79QI.png"/>
+
+<br />
+<br />
+<img src="https://i.imgur.com/0Z3gya0.png"/>
+
+<br />
+<br />
+<img src="https://i.imgur.com/o89WfZT.png"/>
+
+<br />
+<br />
+<img src="https://i.imgur.com/7O3kc6d.png"/>
+
+<br />
+<br />
+<img src="https://i.imgur.com/GRJe8oi.png"/>
+
+<br />
+<br />
+<img src="https://i.imgur.com/ID9jvrM.png"/>
+
+<br />
+<br />
+<img src="https://i.imgur.com/0F7Owmj.png"/>
+
+<br />
+<br />
+<img src="https://i.imgur.com/w1SrH0B.png"/>
+
+<br />
+<br />
+<img src="https://i.imgur.com/yE2v7hI.png"/>
+
+<br />
+<br />
+<img src="https://i.imgur.com/qPSY3h4.png"/>
+
+<br />
+<br />
+<img src="https://i.imgur.com/l0ln427.png"/>
+
+<br />
+<br />
+<img src="https://i.imgur.com/oFBlBP3.png"/>
+
+<br />
+<br />
+<img src="https://i.imgur.com/70CyOPJ.png"/>
+
+<br />
+<br />
+<img src="https://i.imgur.com/l1Jm6zs.png"/>
+
+<br />
+<br />
+<img src="https://i.imgur.com/FHVDo9O.png"/>
+
+<br />
+<br />
+<img src="https://i.imgur.com/5Z4YlvT.png"/>
+
+<br />
+<br />
+<img src="https://i.imgur.com/XDDbiee.png"/>
+
+<br />
+<br />
+<img src="https://i.imgur.com/Lzq3zsY.png"/>
+
+<br />
+<br />
+<img src="https://i.imgur.com/5KAzXie.png"/>
+
+<br />
+<br />
+<img src="https://i.imgur.com/e71fgF3.png"/>
+
+<br />
+<br />
+<img src="https://i.imgur.com/lIISmv8.png"/>
+
+<br />
+<br />
+<img src="https://i.imgur.com/jyEl2sT.png"/>
+
+<br />
+<br />
+<img src="https://i.imgur.com/2QBjuDB.png"/>
 
 <!--
-<p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
---!>
 
-<!--
- ```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
+<br />
+<br />
+<img src=""/>
+
 --!>
