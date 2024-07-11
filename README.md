@@ -1,4 +1,4 @@
-<h1>Nessus Home Lab</h1>
+<h1>Nessus Vulnerability Scanner Home Lab</h1>
 
 <h2>Description</h2>
 In this lab, I installed Nessus Essentials on my host computer and used a new Windows 11 virtual machine as the scanning target. I followed the 
