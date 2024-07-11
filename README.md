@@ -141,36 +141,63 @@ To remediate this, I created a text file to add these keys to the registry and e
 <br />
 <img src="https://i.imgur.com/FHVDo9O.png"/>
 
+The medium severity vulnerability describes that SMB signing is not required on the target machine.
 <br />
 <br />
 <img src="https://i.imgur.com/5Z4YlvT.png"/>
 
+The related registry file is named “EnableSecuritySignature,” so I set its value to 1 to enable SMB signing.
 <br />
 <br />
 <img src="https://i.imgur.com/XDDbiee.png"/>
 
+The low severity vulnerability describes that the target machine answers to ICMP timestamp requests. The solution is to filter out the incoming ICMP timestamp requests and outgoing ICMP timestamp replies.
 <br />
 <br />
 <img src="https://i.imgur.com/Lzq3zsY.png"/>
 
-<h3>7. Remediated scan</h3>
+I created an inbound rule on the target's firewall to block ICMP Timestamp requests and ICMP Timestamp replies (
+<a href="https://www.oreilly.com/library/view/internet-core-protocols/1565925726/re57.html">type 14, code 0</a>
+).
 <br />
 <br />
-<img src="https://i.imgur.com/5KAzXie.png"/>
+<img src="https://i.imgur.com/sKkcqpC.png"/>
 
+In addition, I added a registry file per this 
+<a href="https://learn.microsoft.com/en-us/answers/questions/1691269/disable-icmp-timestamp-responses">Microsoft forum question</a>
+to disable ICMP Timestamp replies.
+<br />
+<br />
+<img src="https://i.imgur.com/heVIgb1.png"/>
+
+Though I created an inbound rule and created a registry file to block these specific ICMP messages, the vulnerability persisted in the post-remediation scan. 
+<br />
+<br />
+I believe this may be a false positive, and research on my part shows that many others have taken similar procedures just to end up with the alert still being there. I decided to leave the alert and move on.
+
+<h3>7. Remediated scan</h3>
+After remediating the vulnerabilities, I ran another credentialed scan to confirm that they were fixed. 
 <br />
 <br />
 <img src="https://i.imgur.com/e71fgF3.png"/>
 
+As we can see in the screenshots, the remediation steps I took worked, and we no longer see them in the Nessus dashboard.
+<br />
+<br />
+<img src="https://i.imgur.com/5KAzXie.png"/>
+
 <h3>8. Finishing off</h3>
+To recap - our initial scan on the target was uncredentialed, so we did not see many vulnerabilities.
 <br />
 <br />
 <img src="https://i.imgur.com/lIISmv8.png"/>
 
+After configuring settings for credentialed scans, we saw more vulnerabilities on the target that we could then remediate.
 <br />
 <br />
 <img src="https://i.imgur.com/jyEl2sT.png"/>
 
+After remediating the vulnerabilities, they no longer appear on the dashboard. The remainder of the alerts are informational.
 <br />
 <br />
 <img src="https://i.imgur.com/2QBjuDB.png"/>
