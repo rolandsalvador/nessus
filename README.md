@@ -4,8 +4,10 @@
 In this lab, I installed Nessus Essentials on my host computer and used a new Windows 11 virtual machine as the scanning target. I followed the 
 <a href="https://community.tenable.com/s/article/Troubleshooting-Credential-scanning-on-Windows?language=en_US">vendor recommended configuration</a>
 steps on the host machine to enable credentialed scans, including editing registry files, opening ports, and starting services. After successfully running a credentialed scan, I remediated a few of the vulnerabilities that were found.
-
-<br /> In the walkthrough below, I detail many of the steps I took to configure Nessus and the results of my scans. Thank you for taking a look!
+<br />
+<br />
+<img src="https://i.imgur.com/l0ln427.png"/>
+In the walkthrough below, I detail many of the steps I took to configure Nessus and the results of my scans. Thank you for taking a look!
 
 <h2>Skills Used</h2>
 
@@ -28,7 +30,7 @@ steps on the host machine to enable credentialed scans, including editing regist
 [4. Credentialed scan setup](#4-credentialed-scan-setup)<br />
 [5. Credentialed scan](#5-credentialed-scan)<br />
 [6. Vulnerability remediation](#6-vulnerability-remediation)<br />
-[7. Remediated scan](#7-remediated-scan)<br />
+[7. Post-remediation scan](#7-post-remediation-scan)<br />
 [8. Finishing off](#8-finishing-off)<br />
 
 <h2>Walkthrough</h2>
@@ -48,6 +50,8 @@ Now that Nessus is set up, I set up a virtual machine to act as the vulnerabilit
 <br />
 <br />
 <img src="https://i.imgur.com/bXc5kiR.png"/>
+
+[Back to top](#nessus-home-lab)
 
 <h3>2. Configuring vulnerability scan target</h3>
 The scan target is a freshly installed Windows 11 machine that I set up. I configured the virtual machine to accept pings from my host machine to ensure connectivity.
@@ -175,7 +179,7 @@ Though I created an inbound rule and created a registry file to block these spec
 <br />
 I believe this may be a false positive, and research on my part shows that many others have taken similar procedures just to end up with the alert still being there. I decided to leave the alert and move on.
 
-<h3>7. Remediated scan</h3>
+<h3>7. Post-remediation scan</h3>
 After remediating the vulnerabilities, I ran another credentialed scan to confirm that they were fixed. 
 <br />
 <br />
