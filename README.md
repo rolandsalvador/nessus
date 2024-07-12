@@ -51,7 +51,7 @@ Now that Nessus is set up, I set up a virtual machine to act as the vulnerabilit
 <br />
 <img src="https://i.imgur.com/bXc5kiR.png"/>
 
-[Back to top](#nessus-home-lab)
+[Back to top](#nessus-vulnerability-scanner-home-lab)
 
 <h3>2. Configuring vulnerability scan target</h3>
 The scan target is a freshly installed Windows 11 machine that I set up. I configured the virtual machine to accept pings from my host machine to ensure connectivity.
@@ -64,7 +64,7 @@ Afterwards, I ran a host discovery scan on the virtual machine’s IP address so
 <br />
 <img src="https://i.imgur.com/8al2XQ9.png"/>
 
-[Back to top](#nessus-home-lab)
+[Back to top](#nessus-vulnerability-scanner-home-lab)
 
 <h3>3. Non-credentialed scan</h3>
 To test if everything was set up correctly, I ran a non-credentialed scan.
@@ -77,7 +77,7 @@ As expected, most of the vulnerabilities reported here are informational. To get
 <br />
 <img src="https://i.imgur.com/Rvw79QI.png"/>
 
-[Back to top](#nessus-home-lab)
+[Back to top](#nessus-vulnerability-scanner-home-lab)
 
 <h3>4. Credentialed scan setup</h3>
 These are troubleshooting steps to follow for credentialed scanning on Windows machines, which are provided in the 
@@ -122,7 +122,7 @@ Finally, I provided the virtual machine’s credentials on the Nessus dashboard 
 <br />
 <img src="https://i.imgur.com/qPSY3h4.png"/>
 
-[Back to top](#nessus-home-lab)
+[Back to top](#nessus-vulnerability-scanner-home-lab)
 
 <h3>5. Credentialed scan</h3>
 After completing the configuration steps above, I ran a test credentialed scan to see if everything was set up correctly.
@@ -135,7 +135,7 @@ Thankfully, it worked. We can now see some high and medium severity vulnerabilit
 <br />
 <img src="https://i.imgur.com/oFBlBP3.png"/>
 
-[Back to top](#nessus-home-lab)
+[Back to top](#nessus-vulnerability-scanner-home-lab)
 
 <h3>6. Vulnerability remediation</h3>
 The remediations tab is available now. Since this is a freshly installed Windows 11 machine, the only remediation Nessus suggests is a Windows update to the latest version. However, there was a high and medium severity vulnerability that I had to fix manually.
@@ -187,7 +187,7 @@ Though I created an inbound rule and created a registry file to block these spec
 <br />
 I believe this may be a false positive, and research on my part shows that many others have taken similar procedures just to end up with the alert still being there. I decided to leave the alert and move on.
 
-[Back to top](#nessus-home-lab)
+[Back to top](#nessus-vulnerability-scanner-home-lab)
 
 <h3>7. Post-remediation scan</h3>
 After remediating the vulnerabilities, I ran another credentialed scan to confirm that they were fixed. 
@@ -200,7 +200,7 @@ As we can see in the screenshots, the remediation steps I took worked, and we no
 <br />
 <img src="https://i.imgur.com/5KAzXie.png"/>
 
-[Back to top](#nessus-home-lab)
+[Back to top](#nessus-vulnerability-scanner-home-lab)
 
 <h3>8. Finishing off</h3>
 To recap - our initial scan on the target was uncredentialed, so we did not see many vulnerabilities.
@@ -218,4 +218,4 @@ After remediating the vulnerabilities, they no longer appear on the dashboard. T
 <br />
 <img src="https://i.imgur.com/2QBjuDB.png"/>
 
-[Back to top](#nessus-home-lab)
+[Back to top](#nessus-vulnerability-scanner-home-lab)
