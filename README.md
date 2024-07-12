@@ -31,7 +31,7 @@ In the walkthrough below, I detail many of the steps I took to configure Nessus 
 [5. Credentialed scan](#5-credentialed-scan)<br />
 [6. Vulnerability remediation](#6-vulnerability-remediation)<br />
 [7. Post-remediation scan](#7-post-remediation-scan)<br />
-[8. Finishing off](#8-finishing-off)<br />
+[Finishing off](#finishing-off)<br />
 
 <h2>Walkthrough</h2>
 
@@ -202,7 +202,7 @@ As we can see in the screenshots, the remediation steps I took worked, and we no
 
 [Back to top](#nessus-vulnerability-scanner-home-lab)
 
-<h3>8. Finishing off</h3>
+<h3>Finishing off</h3>
 To recap - our initial scan on the target was uncredentialed, so we did not see many vulnerabilities.
 <br />
 <br />
